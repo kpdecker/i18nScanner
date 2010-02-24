@@ -21,7 +21,7 @@ Execution:
 
 Installation:
   Update submodules
-    git submodule update
+    git submodule update --init
 
   Download and install Mozilla Rhino (http://www.mozilla.org/rhino/)
     Extract js.jar to the lib directory

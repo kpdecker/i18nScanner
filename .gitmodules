@@ -1,0 +1,3 @@
+[submodule "jsParser"]
+	path = jsParser
+	url = git@github.com:kpdecker/jsParser.git

@@ -1,0 +1,32 @@
+i18nScanner 1.0
+  i18nScanner is a simple utility used to scan for missing i18n calls within Mojo applications.
+
+Execution:
+  i18nScanner is designed to be run in the Rhino shell environment. Other engines may work provided they
+  allow access to Java objects and provide the print and readFile APIs but are not officially supported.
+
+  A convenience script, i18nscanner.sh has been provided for sh environments.
+    i18nScanner.sh resourceFile1 resourceFile2 ...
+
+  Other environments should execute the following javascript files:
+    - jsParser/jsParserLogger.js
+    - jsParser/rhinoLogger.js
+    - jsParser/jsLineBuffer.js
+    - jsParser/jsParser.js
+    - jsParser/jsLex.js
+    - i18nScannerJS.js
+    - i18nScannerXHTML.js
+    - mojoIgnores.js
+    - i18nScanner.js
+
+Installation:
+  Update submodules
+    git submodule update
+
+  Download and install Mozilla Rhino (http://www.mozilla.org/rhino/)
+    Extract js.jar to the lib directory
+      -- or --
+    Export the path to the extracted Rhino libraries in the RHINO_DIR environment variable.
+
+Requirements:
+  i18nScanner requires Mozilla Rhino 1.7 or later. HTML scanning requires Java 1.5 or later.

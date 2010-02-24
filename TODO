@@ -1,0 +1,4 @@
+TODO:
+- Provide a verbose mode
+- Tail comparison for call checks (i.e. controller.get vs. get or this.controller.get)
+- Expand checks to include other best practices
